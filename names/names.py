@@ -57,11 +57,11 @@ duplicates = []
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-bst = BinarySearchTree(names_1[0])
+tree = BinarySearchTree(names_1[0])
 for name in names_1:
-    bst.insert(name)
+    tree.insert(name)
 for name in names_2:
-    if bst.contains(name):
+    if tree.contains(name):
         duplicates.append(name)
 
 
